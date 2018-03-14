@@ -1,8 +1,11 @@
 library(tidyverse)
 
 # For breaking news about R, follow Hadley Wickham on twitter @hadleywickham
+# I would also recommend: @dataandme @JennyBryan @drob
+
 # For example, on Sunday there was a new chapter added to his textbook advanced R
 # https://adv-r.hadley.nz/names-values.html
+
 
 # devtools::install_github("r-lib/lobstr")
 library(lobstr)
