@@ -1,3 +1,5 @@
+# devtools::install_github("dkahle/ggmap")
+
 library(ggmap)
 
 map <- get_googlemap('bude', zoom = 15)
