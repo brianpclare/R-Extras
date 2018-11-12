@@ -3,7 +3,7 @@ library(tidyverse)
 # For breaking news about R, follow Hadley Wickham on twitter @hadleywickham
 # I would also recommend: @dataandme @JennyBryan @drob
 
-# For example, on Sunday there was a new chapter added to his textbook advanced R
+# For example, recently there was a new chapter added to his textbook advanced R
 # https://adv-r.hadley.nz/names-values.html
 
 
@@ -15,6 +15,16 @@ y <- x
 
 obj_addr(x)
 obj_addr(y)
+
+x <- 2:4
+
+obj_addr(x)
+obj_addr(y)
+
+z <- 4
+obj_addr(z)
+z <- 5
+obj_addr(z)
 
 # What about lists? (similarly for vectors)
 
@@ -53,8 +63,10 @@ obj_size(x, y)
 # Garbage collection
 # R automatically runs garbage collection whenever it needs memory
 # You never need to run gc() yourself, although you can
+mem_used()
 gc()
 
+mem_used()
 rm(x)
 
 mem_used()
