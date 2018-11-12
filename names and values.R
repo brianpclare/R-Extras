@@ -31,6 +31,9 @@ obj_addr(z)
 l1 <- list(1, 2, 3)
 l2 <- l1
 
+obj_addr(l1)
+obj_addr(l2)
+
 l2[[3]] <- 4
 
 obj_addr(l1)
